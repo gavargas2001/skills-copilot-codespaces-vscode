@@ -61,7 +61,11 @@ app.get('/date/:date', (req, res) => {
   }
 });
 
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+  });
 
+  
 
 /* // Display a comment by rating
 app.get('/rating/:rating', (req, res) => {
